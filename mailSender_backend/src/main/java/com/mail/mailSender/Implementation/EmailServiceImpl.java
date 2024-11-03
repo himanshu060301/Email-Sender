@@ -66,7 +66,7 @@ public class EmailServiceImpl implements EmailService {
 	        simpleMsg.setTo(to);
 	        simpleMsg.setSubject(subject);
 	        simpleMsg.setText(msg);
-	        simpleMsg.setFrom("12as1911063@gmail.com");
+	        simpleMsg.setFrom("Email_Address");
 	        mailSender.send(simpleMsg);
 	        logger.info("Email has been sent...");
 	    } catch (Exception e) {
@@ -82,7 +82,7 @@ public class EmailServiceImpl implements EmailService {
 	        simpleMsg.setTo(to);
 	        simpleMsg.setSubject(subject);
 	        simpleMsg.setText(msg);
-	        simpleMsg.setFrom("12as1911063@gmail.com");
+	        simpleMsg.setFrom("Email_Address");
 	        mailSender.send(simpleMsg);
 	        logger.info("Email has been sent...");
 	    } catch (Exception e) {
@@ -100,7 +100,7 @@ public class EmailServiceImpl implements EmailService {
 			MimeMessageHelper helper=new MimeMessageHelper(mailMsg,true,"UTF-8");
 			helper.setTo(to);
 			helper.setSubject(subject);
-			helper.setFrom("12as1911063@gmail.com");
+			helper.setFrom("Email_Address");
 			helper.setText(htmlContent,true);
 			mailSender.send(mailMsg);
 	        logger.info("Email has been sent...");
@@ -118,7 +118,7 @@ public class EmailServiceImpl implements EmailService {
 			MimeMessageHelper helper=new MimeMessageHelper(mailMsg,true,"UTF-8");
 			helper.setTo(to);
 			helper.setSubject(subject);
-			helper.setFrom("12as1911063@gmail.com");
+			helper.setFrom("Email_Address");
 			helper.setText(msg);
 			
 			FileSystemResource fileSystemResource=new FileSystemResource(file);
@@ -139,7 +139,7 @@ public class EmailServiceImpl implements EmailService {
 			MimeMessageHelper helper=new MimeMessageHelper(mailMsg,true,"UTF-8");
 			helper.setTo(to);
 			helper.setSubject(subject);
-			helper.setFrom("12as1911063@gmail.com");
+			helper.setFrom("Email_Address");
 			helper.setText(msg,true);
 			
 			File file=new File("src/main/resources/email/test.png");
